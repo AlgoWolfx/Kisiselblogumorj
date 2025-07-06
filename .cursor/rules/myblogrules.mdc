@@ -1,0 +1,48 @@
+--- 
+alwaysApply: true
+---
+
+ Kişisel Blog Projesi Geliştirme Kuralları
+UI / Tasarım
+
+Mevcut tasarım bozulmayacak.
+
+UI bileşenlerinde yalnızca gerektiğinde ekleme yapılabilir, değiştirme ve silme yapılmaz.
+
+Kod Yapısı
+
+Mevcut dosya ve klasör yapısı korunur.
+
+Kod mimarisi sabittir, yapısal değişiklik yapılmaz.
+
+Import ve API Kullanımı
+
+Var olan importlar değiştirilmez.
+
+Mevcut API yapıları korunur, sadece gerektiğinde yeni endpoint eklenebilir.
+
+Dil ve Yanıt Stili
+
+Tüm cevaplar Türkçe verilecektir.
+
+Açıklamalar kısa ve öz olacak, uzun açıklamalardan kaçınılacaktır.
+
+Debug ve Geliştirme
+
+Gereksiz debug yapılmaz.
+
+Çözüm odaklı yaklaşım tercih edilir.
+
+console.log gibi geçici çıktılar sadece development ortamında görünür.
+
+Kod Kalitesi
+
+Güvenilir, sade ve sürdürülebilir kod teknikleri kullanılacaktır.
+
+Karmaşık yapı ve geçici çözümlerden kaçınılacaktır.
+
+İletişim ve Onay Süreci
+
+Her geliştirme adımı kullanıcıya sorularak ilerletilir.
+
+Geliştirme işlemine geçilmeden önce adım-adım plan yapılır.

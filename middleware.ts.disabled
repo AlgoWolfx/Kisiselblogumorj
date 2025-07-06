@@ -1,0 +1,35 @@
+import { createMiddlewareClient } from '@supabase/auth-helpers-nextjs'
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
+
+export async function middleware(request: NextRequest) {
+  // Yanıtı oluştur
+  const response = NextResponse.next()
+  
+  try {
+    // Middleware supabase client oluştur 
+    const supabase = createMiddlewareClient({ 
+      req: request, 
+      res: response 
+    })
+    
+    // Oturumu yenile, böylece kimlik doğrulama çerezleri güncel kalır
+    await supabase.auth.getSession()
+  } catch (error) {
+    console.error("Middleware hatası:", error)
+    // Hatayı yut ve devam et, hata fırlatma
+  }
+  
+  return response
+}
+
+// Tüm isteklere middleware uygulayalım
+export const config = {
+  matcher: [
+    /*
+     * Middlewaren'in şu pathlere uygulanmaması:
+     * - Statik dosyalar (örn. favicons, images vb.)
+     */
+    '/((?!_next/static|_next/image|favicon.ico).*)',
+  ],
+} 
