@@ -1,87 +1,58 @@
-# Yapılan Geliştirmeler (2024)
+# Personal Blog
 
-- Admin paneli arayüzü tamamen sadeleştirildi ve modernleştirildi.
-- İstatistik kartları ve tablo görünümleri daha renkli ve kullanıcı dostu hale getirildi.
-- Sadece veritabanında admin rolü olan kullanıcılar admin paneline erişebiliyor.
-- E-posta onayı ve gereksiz güvenlik kontrolleri kaldırıldı.
-- Admin paneli ve anasayfa arka planları ayrıştırıldı.
-- DOM ve erişim hataları giderildi.
-- Kod yapısı ve güvenlik iyileştirildi.
+A personal blog built with Next.js, React, and Tailwind CSS — a modern, responsive platform for publishing posts and engaging with readers.
 
----
+## Features
 
-# Kişisel Blog
+- Modern, responsive design
+- Dark mode support
+- MDX support for blog posts
+- Search functionality
+- Contact form
+- SEO optimization
+- Social media integration
+- Role-restricted admin panel for managing posts
 
-Bu proje, Next.js, React ve TailwindCSS kullanılarak geliştirilmiş kişisel bir blog sitesidir. Modern ve responsive tasarımı ile yazılarınızı paylaşabileceğiniz, okuyucularla etkileşime geçebileceğiniz bir platformdur.
-
-## Özellikler
-
-- Modern ve duyarlı (responsive) tasarım
-- Karanlık tema desteği
-- Blog yazıları için MDX desteği
-- Arama fonksiyonu
-- İletişim formu
-- SEO optimizasyonu
-- Sosyal medya entegrasyonu
-
-## Kullanılan Teknolojiler
+## Tech Stack
 
 - [Next.js 14](https://nextjs.org/)
 - [React](https://reactjs.org/)
-- [TailwindCSS](https://tailwindcss.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Lucide Icons](https://lucide.dev/)
-- [Shadcn UI](https://ui.shadcn.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
 
-## Kurulum
+## Getting Started
 
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AlgoWolfx/Kisiselblogumorj.git
+   cd Kisiselblogumorj
+   ```
 
-1. Repoyu klonlayın:
-```bash
-git clone https://github.com/GeraltXeth/kisiselblog.git
-cd kisiselblog
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-2. Bağımlılıkları yükleyin:
-```bash
-npm install
-```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-3. Geliştirme sunucusunu başlatın:
-```bash
-npm run dev
-```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-4. Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açarak uygulamayı görüntüleyin.
-
-## Proje Yapısı
+## Project Structure
 
 ```
-kisiselblog/
-├── app/               # Next.js 14 App Router sayfaları
-├── components/        # React bileşenleri
-├── public/            # Statik dosyalar
-├── content/           # Blog içerikleri (MDX)
-├── styles/            # CSS stil dosyaları
-├── lib/               # Yardımcı fonksiyonlar ve kütüphaneler
-└── ...
+├── app/               # Next.js 14 App Router pages
+├── components/        # React components
+├── public/            # Static assets
+├── content/           # Blog content (MDX)
+├── styles/            # Stylesheets
+└── lib/               # Utilities and helpers
 ```
 
-## Katkıda Bulunma
+## License
 
-1. Bu repoyu forklayın
-2. Feature branch'i oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some amazing feature'`)
-4. Branch'inize push edin (`git push origin feature/amazing-feature`)
-5. Pull Request oluşturun
-
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakınız.
-
-## İletişim
-
-Yiğit Osman Bayrak - dryigitx.x@gmail.com
-
-Proje Linki: [https://github.com/GeraltXeth/kisiselblog](https://github.com/GeraltXeth/kisiselblog) 
+Licensed under the MIT License. See `LICENSE` for details.
